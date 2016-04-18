@@ -1,2 +1,271 @@
 $icon-font-path: "../assets/fonts/bootstrap/" !default;
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+body {
+  background: #d8e2ec;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #383d40;
+  border-radius: 0;
+  text-align: center;
+}
+
+.container {
+  width: 965px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container.header {
+  height: 132px;
+}
+
+.container.header > div {
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.container.header div p {
+  line-height: 122px;
+  vertical-align: bottom;
+}
+
+.container.header div p * {
+  vertical-align: bottom;
+  line-height: 100%;
+}
+
+.container.header div.pull-right {
+  padding-bottom: 0px;
+}
+
+.container.header div.pull-right p {
+  line-height: 132px;
+}
+
+.container.header div.pull-right p * {
+  vertical-align: middle;
+}
+
+.container.header div.pull-left p span {
+  font-size: 24px;
+  color: #666;
+  padding-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+//NAVBAR
+.container-fluid.navbar {
+  height: 38px;
+  min-height: 38px;
+  color: #ccc;
+}
+
+.container-fluid.navbar a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.container-fluid.navbar a:hover {
+  text-decoration: none;
+}
+
+.container-fluid.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid.navbar ul li {
+  cursor: pointer;
+}
+
+.container-fluid.navbar .CMS_MAINMENU li:hover {
+  color: #fff;
+  background: #8A2101;
+}
+
+.container-fluid.navbar .CMS_MAINMENU li:hover a {
+  color: #fff;
+}
+
+.container-fluid.navbar .CMS_MAINMENU > ul {
+  text-align: left;
+  font-size: 0px;
+}
+
+.container-fluid.navbar .CMS_MAINMENU > ul > li {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  width: 20%;
+  line-height: 36px;
+  height: 36px;
+  border-right: 1px solid #888;
+  font-size: 16px;
+  overflow: visible;
+  vertical-align: top;
+}
+
+.container-fluid.navbar .CMS_MAINMENU > ul > li:first-child {
+  border-left: 1px solid #888;
+}
+
+.container-fluid.navbar .CMS_MAINMENU > ul > li ul {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
+  background: #383d40;
+  text-align: left;
+  width: 200%;
+  border: 1px solid #888;
+  text-transform: capitalize;
+}
+
+.container-fluid.navbar .CMS_MAINMENU > ul > li ul li {
+  border-bottom: 1px solid #888;
+  padding-left: 14px;
+}
+
+.container-fluid.navbar .CMS_MAINMENU > ul > li ul li:last-child {
+  border-bottom: 0;
+}
+
+.container-fluid.navbar .CMS_MAINMENU > ul > li:hover ul {
+  display: block;
+}
+
+//content
+div.container.content {
+  background: #fff;
+}
+
+div.container.content .top-img {
+  height: 170px;
+}
+
+div.container.content .content-inner {
+  padding: 0 20px;
+}
+
+div.container.content .CMS_BREADCRUMB {
+  margin: 10px auto;
+}
+
+div.container.content .CMS_BREADCRUMB ul {
+  list-style: none;
+  text-align: left;
+  font-size: 13px;
+  padding-left: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+}
+
+div.container.content .CMS_BREADCRUMB ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+div.container.content .CMS_BREADCRUMB ul li:after {
+  content: " >> ";
+}
+
+div.container.content .CMS_BREADCRUMB ul li:last-child:after {
+  content: "";
+}
+
+div.container.content .CMS_BREADCRUMB ul li a {
+  color: #333333;
+  text-decoration: none;
+}
+
+div.container.content .CMS_BREADCRUMB ul li a:hover {
+  text-decoration: none;
+}
+
+div.container.content .CMS_SIDEBAR {
+  width: 30%;
+  text-align: left;
+}
+
+div.container.content .CMS_SIDEBAR ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+div.container.content .CMS_SIDEBAR ul li {
+  cursor: pointer;
+}
+
+div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_1 {
+  height: 29px;
+  line-height: 29px;
+  font-size: 14px;
+  color: #862400;
+  background: url(../assets/images/li_bg.gif) repeat-x;
+  padding: 0px 0px 0px 10px;
+  font-weight: bold;
+  border: 1px solid #E7E7E7;
+}
+
+div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_1 a {
+  color: #862400;
+}
+
+div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_1 a:hover {
+  text-decoration: none;
+}
+
+div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_2 a {
+  color: #333333;
+  font-size: 14px;
+}
+
+div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_2 {
+  margin: 5px 0 5px 30px;
+}
+div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_ACTIVE a{
+  text-decoration: underline;
+}
+div.container.content .main-content {
+  width: 70%;
+  padding-left: 15px;
+  text-align: left;
+}
+
+div.container.content .main-content h4 {
+  font-size: 20px;
+  color: #862400;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+div.container.content .main-content h5{
+  color: #862400;
+  font-size: 16px;
+  font-weight: bold;
+}
+div.container.content .main-content p{
+  font-size: 13px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+//footer
+.container-fluid.footer {
+  height: 50px;
+}
+
+.container-fluid.footer p {
+  line-height: 50px;
+  font-size: 14px;
+  color: #BFC3C4;
+}
