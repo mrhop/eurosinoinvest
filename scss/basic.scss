@@ -1,3 +1,4 @@
+$font-family-base: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $icon-font-path: "../assets/fonts/bootstrap/" !default;
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
@@ -7,7 +8,9 @@ body {
 p {
   margin-bottom: 0px;
 }
-
+.clear-both{
+  clear: both;
+}
 .container-fluid {
   width: 100%;
   padding: 0;
@@ -233,7 +236,7 @@ div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_2 a {
 div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_2 {
   margin: 5px 0 5px 30px;
 }
-div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_ACTIVE a{
+div.container.content .CMS_SIDEBAR ul li.CMS_SIDEBAR_2.CMS_SIDEBAR_ACTIVE a{
   text-decoration: underline;
 }
 div.container.content .main-content {
@@ -258,6 +261,15 @@ div.container.content .main-content p{
   font-size: 13px;
   line-height: 1.5em;
   margin-bottom: 10px;
+}
+
+div.container.content .main-content div.pull-left{
+  margin-bottom: 20px;
+  p{
+    margin-bottom: 0px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
 }
 //footer
 .container-fluid.footer {
